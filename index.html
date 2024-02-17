@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="menu"></div>
-    <div id="close"></div>
+    <div id="close-menu"></div>
     <div id="navigation">
         <div id="pf"></div>
         <h2>Omid Mohammadi</h2>
@@ -29,6 +29,7 @@
 
 
     <div id="main-main">
+            <div id="myimg"></div>
             <h1 id="Name">Omid Mohammadi</h1>
             <p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -58,25 +59,24 @@
 
 
 <script>
-    document.getElementById("insta").addEventListener("click", function(){window.location.href="https://www.instagram.com/__________________mhmdi/"})
-    document.getElementById("twitt").addEventListener("click", function(){window.location.href="https://www.twitter.com"})
-    document.getElementById("you").addEventListener("click", function(){window.location.href="https://www.youtube.com"})
-    var con = document.getElementsByClassName("con");
     var menu = document.getElementById("menu");
-    var nav = document.getElementById("nav");
-    var cancel = document.getElementById("close")
-    var social = document.getElementById("social");
+    var navigation = document.getElementById("navigation");
+    var close_menu = document.getElementById("close-menu");
+
+
+
     menu.addEventListener("click", function(){
-        nav.style.display="flex";
-        menu.style.display="none";
-        cancel.style.display="flex";
-        social.style.display="flex";
+        navigation.style.display = "flex";
+        navigation.style.width = "100%";
+        navigation.style.position ="fixed";
+        close_menu.style.display ="flex";
+        menu.style.display = "none";
     })
-    cancel.addEventListener("click", function(){
-        nav.style.display="none";
-        cancel.style.display="none";
-        menu.style.display="flex";
-        social.style.display="none";
+    close_menu.addEventListener("click", function(){
+        navigation.style.display = "none";
+        navigation.style.width = "100%";
+        close_menu.style.display ="none";
+        menu.style.display = "flex";
     })
 
 </script>
