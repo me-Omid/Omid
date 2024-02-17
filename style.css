@@ -52,6 +52,10 @@ body{display: flex; flex-direction: row;
     #myimg{
         display: none;
     }
+    #home{
+        background-color: darkblue;
+        color: white;
+    }
     
     
 
