@@ -1,6 +1,9 @@
 body{display: flex; flex-direction: row; 
     font-family: 'Indie Flower', cursive; margin: 0; background-color: rgb(255, 255, 255);
      -webkit-overflow-scrolling: touch; scroll-behavior: smooth; background-color: rgb(255, 255, 255);
+
+
+
 }
     ::-webkit-scrollbar{display: none;}
 
@@ -39,15 +42,35 @@ body{display: flex; flex-direction: row;
         width: 40%;
         font-size: x-large;
     }
-    #Name{
-        display: flex; justify-content: center; align-items: center;
-        font-size: 250%;
-        width: 100%; height: auto;   
+
+    #namebox{
+        width: auto;
     }
+    #Name {
+        display: inline-block;
+        font-size: 250%;
+        letter-spacing: 10px;
+        width: 100%;
+        height: auto;   
+        border-right: 3px solid;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 1.1s steps(13) forwards, cursor .4s infinite  alternate step-end;
+    }
+    
+    @keyframes typing {
+        from {width: 0;}
+    }
+    @keyframes cursor{
+        50%{border-color: transparent;}
+    }
+    
+    
+    
     #info{
-        display: flex; justify-content: center; align-items: center;
+        display: inline-block; justify-content: center; align-items: center;
         font-size: 150%;
-        width: 80%; height: auto; 
+        width: 80%; height: auto;
     }
     #myimg{
         display: none;
