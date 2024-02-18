@@ -9,7 +9,7 @@ body{display: flex; flex-direction: row;
 
 /*  Navigation  */    
     #navigation{
-        display: flex; flex-direction: column; align-items: center; padding-top: 2rem; flex-shrink: 0;
+        display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding-top: 2rem; flex-shrink: 0;
         min-width: 25%; height: 96.5vh;  background-color: rgb(255, 254, 200); 
     
         background: rgb(232, 232, 232);
@@ -100,6 +100,28 @@ body{display: flex; flex-direction: row;
         width: 80%; height: 50%;
         outline: none;
     }
+    #sm{
+        background-color: red;
+        margin-bottom: 5%; width: 100%; height: auto;
+        display: flex; justify-content: space-around; align-items: center; flex-direction: row;
+    }
+
+
+    #instagram{
+        min-width: 2rem; min-height: 2rem;
+        background-image: url("../icons/instagram.png");
+        background-size: cover; background-position: center;
+    }
+    #telegram{
+        min-width: 2rem; min-height: 2rem;
+        background-image: url("../icons/telegram.png");
+        background-size: cover; background-position: center;
+    }
+    #github{
+        min-width: 2rem; min-height: 2rem;
+        background-image: url("../icons/github.png");
+        background-size: cover; background-position: center;
+    }
 
     
     
@@ -149,9 +171,9 @@ body{display: flex; flex-direction: row;
             border-radius: 4px;
             width: 100%; height: auto;
         }
-
-
-
+        #sm{
+            display: none;
+        }
 
         #Name{
             font-size: 180%;
@@ -190,6 +212,15 @@ body{display: flex; flex-direction: row;
             background-image: url("../icons/email.png");
             background-position: center; background-size: cover;
             color: transparent;
+        }
+        #instagram{
+            background-image: url("../icons/instagram.png");
+        }
+        #telegram{
+            background-image: url("../icons/telegram.png");
+        }
+        #github{
+            background-image: url("../icons/github.png");
         }
     
     }
