@@ -95,12 +95,13 @@ body{display: flex; flex-direction: row;
             display: none;
             z-index: 3;
             width: 3rem; height: 3rem; position: fixed; left: 1rem; top: 1rem;
+            padding: 0;
             background-image: url("icons/delete.png"); 
             background-position: center; background-size: cover;
         }
         #navigation{
             display: flex; justify-content: center; align-items: center;
-            width: 100%; height: 5rem;  position: fixed; top: 90vh; 
+            width: 100%; height: 10%;  position: fixed; top: 90%; 
             padding: 0;
             background-color: transparent;
         }
