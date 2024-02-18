@@ -13,16 +13,14 @@
     <title>MHMDI</title>
 </head>
 <body>
-    <div id="menu"></div>
-    <div id="close-menu"></div>
     <div id="navigation">
         <div id="pf"></div>
         <h2 id="navname">Omid Mohammadi</h2>
         <div id="navbox">
-            <a class="link" id = "home">Home</a>
-            <a class="link">My Skills</a>
-            <a class="link">My Projects</a>
-            <a class="link">Send a Mail</a>
+            <a id="About" class="link" href="index.html">About</a>
+            <a id="skills" class="link">My Skills</a>
+            <a id="projects" class="link">My Projects</a>
+            <a id="email" class="link" id ="conntact" href="conntact/conntact.html">Send a Mail</a>
         </div>
     </div>
 
@@ -32,11 +30,7 @@
             <div id="namebox">
                 <h1 id="Name">Omid Mohammadi</h1>
             </div>
-            <p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <p id="info">Hello, My Name is Omid Mohammadi and i am a Computer Science Student Located in Germany.
             </p>
     </div>
 
@@ -69,8 +63,6 @@
 
     menu.addEventListener("click", function(){
         navigation.style.display = "flex";
-        navigation.style.width = "100%";
-        navigation.style.position ="fixed";
         close_menu.style.display ="flex";
         menu.style.display = "none";
     })
