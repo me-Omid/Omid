@@ -19,7 +19,7 @@ body{display: flex; flex-direction: row;
     #pf{
         width: 10rem; height: 10rem;  background-color: rgb(255, 145, 0); 
         background-size: cover; background-position: center; border-radius: 50%; 
-        background-image: url(img/me.jpg); margin-top:2rem;
+        background-image: url(imgs/pf.png); margin-top:2rem;
     }
     #navbox{
         display: flex; justify-content: center; flex-direction: column; align-items: center;
@@ -100,10 +100,15 @@ body{display: flex; flex-direction: row;
         }
         #navigation{
             display: none;
+            align-items: center; justify-content: center;
         }
         #main-main{
             padding: 3rem;
         }
+
+
+
+
 
         #Name{
             font-size: 180%;
@@ -113,7 +118,22 @@ body{display: flex; flex-direction: row;
         }
         #myimg{
             display: flex;
-            width: 20vh; height: 20vh; border-radius: 50%; background-color: red; 
+            width: 20vh; height: 20vh; border-radius: 50%; 
+           background-color: greenyellow;
+           background-image: url("imgs/pf.png");
+           background-size: cover; background-position: center;
+        }
+
+
+
+
+
+        #pf{
+            display: none;
+            background-image: url("imgs/pf.png"); 
+        }
+        #navname{
+            display: none;
         }
     
     }
