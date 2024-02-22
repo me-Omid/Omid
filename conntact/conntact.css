@@ -9,17 +9,17 @@ body{display: flex; flex-direction: row;
 
 /*  Navigation  */    
     #navigation{
-        display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding-top: 2rem; flex-shrink: 0;
+        display: flex; flex-direction: column; align-items: center; padding-top: 2rem; flex-shrink: 0;
         min-width: 25%; height: 96.5vh;  background-color: rgb(255, 254, 200); 
     
-        background: rgb(232, 232, 232);
+        background: rgb(255, 255, 255);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         border-right:1px rgb(0, 0, 0) solid;
     }
     #pf{
         width: 10rem; height: 10rem;  background-color: rgb(255, 145, 0); 
         background-size: cover; background-position: center; border-radius: 50%; 
-        background-image: url("../imgs/pf.png"); margin-top:2rem;
+        background-image: url(imgs/pf.png); margin-top:2rem;
     }
     #navbox{
         display: flex; justify-content: center; flex-direction: column; align-items: center;
@@ -55,7 +55,7 @@ body{display: flex; flex-direction: row;
         border-right: 3px solid;
         overflow: hidden;
         white-space: nowrap;
-        animation: typing 1.1s steps(15) forwards, cursor .4s infinite  alternate step-end;
+        animation: typing 1.1s steps(13) forwards, cursor .4s infinite  alternate step-end;
     }
     
     @keyframes typing {
@@ -75,76 +75,28 @@ body{display: flex; flex-direction: row;
     #myimg{
         display: none;
     }
-    #conntact{
+    #home{
         background-color: darkblue;
         color: white;
     }
-    #form{
-        width: 60%; height: auto;
-        display: flex; justify-content: center; align-items: center; flex-direction: column;
-    }
-    input{
-        font-family: 'Indie Flower', cursive;
-        border: 0px solid transparent;
-        border-bottom: 2px solid rgb(68, 0, 194);
-        height: 1.3rem; width: auto;
-        background-color: transparent;
-        margin: 0.2rem;
-        outline: none;
-    }
-    textarea{
-        font-family: 'Indie Flower', cursive;
-        margin-top: 0.5rem;
-        border: 2px solid rgb(68, 0, 194);
-        border-radius: 4px;
-        width: 80%; height: 50%;
-        outline: none;
-    }
-    #sm{
-        background-color: red;
-        margin-bottom: 5%; width: 100%; height: auto;
-        display: flex; justify-content: space-around; align-items: center; flex-direction: row;
-    }
-
-
-    #instagram{
-        min-width: 2rem; min-height: 2rem;
-        background-image: url("../icons/instagram.png");
-        background-size: cover; background-position: center;
-    }
-    #telegram{
-        min-width: 2rem; min-height: 2rem;
-        background-image: url("../icons/telegram.png");
-        background-size: cover; background-position: center;
-    }
-    #github{
-        min-width: 2rem; min-height: 2rem;
-        background-image: url("../icons/github.png");
-        background-size: cover; background-position: center;
-    }
-
     
     
 
 /*  Phone  */    
     @media(max-width: 1157px){
 
-
-        .link:hover{
-            background-color: transparent; border: 0px solid transparent;
-        }
-
         #menu{
             z-index: 3;
             width: 3rem; height: 3rem; position: fixed; left: 1rem; top: 1rem;
-            background-image: url("../icons/menu-bar.png"); 
+            background-image: url("icons/menu-bar.png"); 
             background-position: center; background-size: cover;
         }
         #close-menu{
             display: none;
             z-index: 3;
             width: 3rem; height: 3rem; position: fixed; left: 1rem; top: 1rem;
-            background-image: url("../icons/delete.png"); 
+            padding: 0;
+            background-image: url("icons/delete.png"); 
             background-position: center; background-size: cover;
         }
         #navigation{
@@ -165,62 +117,52 @@ body{display: flex; flex-direction: row;
             padding: 3rem;
         }
 
-        textarea{
-            margin-top: 0.5rem;
-            border: 2px solid rgb(68, 0, 194);
-            border-radius: 4px;
-            width: 100%; height: auto;
-        }
-        #sm{
-            display: none;
-        }
+
 
         #Name{
             font-size: 180%;
         }
+        #info{
+            font-size: 100%;
+        }
         #myimg{
-            display: none;
+            display: flex;
             width: 20vh; height: 20vh; border-radius: 50%; 
            background-color: greenyellow;
-           background-image: url("../imgs/pf.png");
+           background-image: url("imgs/pf.png");
            background-size: cover; background-position: center;
         }
 
+
+
+
+
         #pf{
             display: none;
-            background-image: url("../imgs/pf.png"); 
+            background-image: url("imgs/pf.png"); 
         }
         #navname{
             display: none;
         }
         #About{
-            background-image: url("../icons/home.png");
+            background-image: url("icons/home.png");
             background-position: center; background-size: cover;
             color: transparent;
         }
         #skills{
-            background-image: url("../icons/skills.png");
+            background-image: url("icons/skills.png");
             background-position: center; background-size: cover;
             color: transparent;
         }
         #projects{
-            background-image: url("../icons/projects.png");
+            background-image: url("icons/projects.png");
             background-position: center; background-size: cover;
             color: transparent;
         }
         #email{
-            background-image: url("../icons/email.png");
+            background-image: url("icons/email.png");
             background-position: center; background-size: cover;
             color: transparent;
-        }
-        #instagram{
-            background-image: url("../icons/instagram.png");
-        }
-        #telegram{
-            background-image: url("../icons/telegram.png");
-        }
-        #github{
-            background-image: url("../icons/github.png");
         }
     
     }
