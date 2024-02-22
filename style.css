@@ -113,7 +113,7 @@ body{display: flex; flex-direction: row;
         #main-section{
             display: flex; justify-content: center; align-items: center; height: 80vh;
             padding: 3rem;
-            width: 100dvw; height: 95dvh;
+            width: 100dvw; height: 100dvh;
             padding: 0; margin: 0;
         }
         #mbox{
