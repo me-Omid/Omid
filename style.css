@@ -93,7 +93,7 @@ body{display: flex; flex-direction: row;
     @media(max-width: 1157px){
         body{ 
             display: flex; justify-content: center; align-items: center;
-            padding: 0; margin: 0;
+            padding: 0; margin: 0; background-color: white;
         }
         #navigation{
             display: flex; justify-content: center; align-items: center;
@@ -101,7 +101,7 @@ body{display: flex; flex-direction: row;
             padding: 0;
             width: 100dvw; height: 10dvh;
             padding: 0; margin: 0;
-            background-color: rebeccapurple;
+            background-color: white;
         }
         #navbox{
             display: flex; justify-content: space-around; align-items: center; flex-direction: row; margin: 0;
