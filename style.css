@@ -29,7 +29,7 @@ body{display: flex; flex-direction: row;
         background-image: url(imgs/pf.png); margin-top:2rem;
     }
     .link{
-        display: flex; flex-direction: column; padding: 1rem; width: 150%;
+        display: flex; flex-direction: column; padding: 1rem; width: 120%;
         text-decoration: none; color: black; border: 2px solid black;
         text-align: center;
         margin: 1rem; border-radius: 12px;}
@@ -41,6 +41,7 @@ body{display: flex; flex-direction: row;
         font-size: 150%; text-align: center;
         width: 80%; height: auto;
     }
+    
     #home{
         background-color: darkblue;
         color: white;
@@ -48,7 +49,10 @@ body{display: flex; flex-direction: row;
     .media{
         width: 1rem; height: 1rem; ;
     }    
-
+    a{
+        text-decoration: none;
+        color: black;
+    }
     /* Bottom part of the Navigation */
     #mbox{
         display: flex; justify-content: space-around; align-items: center; width: 100%;
@@ -84,18 +88,28 @@ body{display: flex; flex-direction: row;
     #home-section{
         display: flex; justify-content: center; align-items: center ; flex-direction: column;
         width: 100%; height: 100dvh;
-        background-color: beige;
+        background-color: honeydew;
     }
-
+    #skills-section{
+        display: flex; justify-content: center; align-items: center;                 
+        width: 100%; height: 100dvh;
+        background-color: azure;
+    }
     #project-section{
         display: flex; justify-content: center; align-items: center ; flex-direction: column;
         width: 100%; height: 100dvh;
-        background-color: honeydew
+        background-color: rgb(243, 243, 231)
     }
     .project-box{
-        width: 50dvw; height: 60dvh; background-color: beige;
+        width: 50dvw; height: 60dvh;
         border-radius: 30px 0px 30px 0px;
         border: 1px black solid;
+        background-color: rgb(249, 255, 238);
+    }
+    #conntact-section{
+        display:flex ; justify-content: center; align-items: center;
+        width: 100%; height: 100dvh;
+        background-color: rgb(249, 255, 238);
     }
 
 
