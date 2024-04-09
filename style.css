@@ -65,6 +65,9 @@ body{display: flex; flex-direction: row;
         width: 100%; height: auto; margin-left: 25dvw;
         scroll-snap-type: y mandatory;
     }
+    .page{
+        scroll-snap-align: start;
+    }
     #intruduction{
         width: 40%;
         font-size: x-large;
@@ -90,19 +93,16 @@ body{display: flex; flex-direction: row;
         display: flex; justify-content: center; align-items: center ; flex-direction: column;
         width: 100%; height: 100dvh;
         background-color: honeydew;
-        scroll-snap-align: start;
     }
     #skills-section{
         display: flex; justify-content: center; align-items: center;                 
         width: 100%; height: 100dvh;
         background-color: azure;
-        scroll-snap-align: start;
     }
     #project-section{
         display: flex; justify-content: center; align-items: center ; flex-direction: column;
         width: 100%; height: 100dvh;
         background-color: rgb(243, 243, 231);
-        scroll-snap-align: start;
     }
     #project-box{
         width: 50dvw; height: 60dvh;
@@ -126,7 +126,6 @@ body{display: flex; flex-direction: row;
         display:flex ; justify-content: center; align-items: center; flex-direction: column;
         width: 100%; height: 100dvh;
         background-color: rgb(249, 255, 238);
-        scroll-snap-align: start;
     }
     form{
         width: 50%;
