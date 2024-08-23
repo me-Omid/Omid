@@ -115,11 +115,12 @@ body{display: flex; flex-direction: row;
     #project-names{
         display: flex; flex-direction: row; width: 50dvw; height: auto; 
         justify-content: space-around;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap; 
     }
     .project-link{
-        background-color: rgb(221, 255, 154);
-        padding: 1rem; border-radius: 5px;
+        display: flex; justify-content: center; align-items: center;
+
+         border-radius: 5px; 
     }
 
     #conntact-section{
